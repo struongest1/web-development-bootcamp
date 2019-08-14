@@ -1,4 +1,4 @@
-# Working Together: Writing Excellent Poetry
+# Excellent Poetry: Working Together
 
 This assignment is meant to get your comfortable with navigating using the terminal, and learning how to work collaboratively using git.
 
