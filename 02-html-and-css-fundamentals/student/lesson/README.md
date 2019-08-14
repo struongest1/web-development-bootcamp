@@ -147,7 +147,7 @@ To use this class in a div we would do the following:
 
 ```
 ## In-line Styling and <style> Element
-Although this is typically not advised, the HTML attribute `style` allows us to style elements by addings css directly to the HTML element like so:
+Although this is typically not advised, the HTML attribute `style` allows us to style elements by addings CSS directly to the HTML element like so:
 ```html
 <div style="font-size: 100px, color: red">
   I'm size 100px and red
