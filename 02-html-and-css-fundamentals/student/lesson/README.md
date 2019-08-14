@@ -41,6 +41,9 @@ HTML is one of the fundamental building blocks of the internet, being the tool w
   <h1 class="simple-style">This 'div' holds 1 element</h1>
 </div>
 
+<!-- Sometimes you need an image on your page! -->
+<img style="width: 100%" src="https://tinyurl.com/y4ud8rjc" /> <!-- this is the shorthand syntax for closing a tag -->
+
 <!-- the link element allows you to connect your site to different webpages using the href attribute (hypertext reference) -->
 <a href="https://google.com">Take me to the googlez!</a>
 
