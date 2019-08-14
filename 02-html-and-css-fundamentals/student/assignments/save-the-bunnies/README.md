@@ -13,3 +13,6 @@ For this assignment, you will be creating a simple web page to promote and help 
 4. When you are ready, add your progress to the GitHub repo by using the `git` commands we learned in the previous lesson (refer to the lesson if you need to remember the commands, or google a cheatsheet for git commands)
 5. Create a [Netlify](https://www.netlify.com/) account, and [deploy your webpage](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) so you can share it with others. It's free! (Tip: you don't need a build command for this particular project when deploying it to Netlify)
 
+## Mockup
+![save the bunnies mockup](save-the-bunnies-mockup.png)
+
