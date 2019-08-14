@@ -8,7 +8,7 @@ Before we dive into building cool things, we have a bit of work to do with learn
 * Using git for version control
 
 ### Using the terminal
-This is a tool that many are resistant to at first but come to love it over time. It's just a very different way to navigate and interact with your computer. Below is a cheatsheet for the basic commands you'll need. You can do things such as create, rename, delete and copy files and much more.
+This is a tool that many are resistant to at first but come to love it over time. It's just a very different way to navigate and interact with your computer. Below is a cheatsheet for the basic commands you'll need. You can do things such as create, rename, delete and copy files and much more. (The square brackets represent placeholders, so this is where you will sub in a word)
 ``` bash
 # Lists the contents of the directory you're in
 $ ls
@@ -32,7 +32,7 @@ $ cd [location]
 $ cd ..
 
 # Used for copying a file or directory
-$ cp filename newfilename
+$ cp [filename] [newfilename]
 
 # Changes your location to your home directory 
 $ cd ~
@@ -41,7 +41,7 @@ $ cd ~
 $ cd /
 
 # Recurively copies the directory and its contents to the specified destination
-$ cp -r source_dirname destination_dirname
+$ cp -r [source_dirname] [destination_dirname]
 
 # Deletes a file
 $ rm [filename]
@@ -53,7 +53,7 @@ $ rm -rf [filename/directory]
 $ sudo rm -rf
 
 # Moves the target to the destination, or renames a file if there is no directory by that name 
-$ mv target /destination
+$ mv [target] [/destination]
 
 # Creates a file
 $ touch [filename]
@@ -87,7 +87,7 @@ Git is a clumsy tool at first, and not exactly intuitive, but it will grow on yo
 $ git init
 
 # Creates a file where you can list files and directories which should be ignored by git
-touch .gitignore
+$ touch .gitignore
 
 # Connects your initalized repo with github
 $ git remote add origin [repo]
@@ -99,10 +99,10 @@ $ git remote add origin [repo]
 $ git log
 
 # Adds the file/directory to your "stage"
-git add [filename/directory]
+$ git add [filename/directory]
 
 # Adds all unstaged things to the stage
-git add all
+$ git add all
 
 # Takes everything from the stage, and creates a commit with the message specified
 $ git commit -m "<message>"
