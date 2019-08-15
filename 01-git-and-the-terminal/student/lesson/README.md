@@ -2,7 +2,7 @@
 
 Before we dive into building cool things, we have a bit of work to do with learning the tools of the trade. 
 
-## This lesson will cover:
+## This lesson covers:
 * Navigation using the terminal
 * Installing and managing packages
 * Using git for version control
