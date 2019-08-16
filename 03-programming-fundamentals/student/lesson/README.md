@@ -22,12 +22,14 @@ To declare a function there are two basic ways:
 ```js
 function superCoolFunction() {
   return 'I am such a cool function... wow';
-}
+};
 
 const superCoolFunction = () => {
   return 'I am such a cool function... wow';
-}
+};
 ```
+
+To load a file into the REPL, get into REPL mode by using the `node` command in your terminal, then use the command `.load [filename]` to load the file (you have to be in the same directory as the file, or give it the correct path). Allow me to demonstrate!
 
 ## Storing Values
 One of the basic concepts in programming is storing values. There are values which change, or **variables** and those that don't, **constants**. Let's go through some examples.
@@ -35,10 +37,15 @@ One of the basic concepts in programming is storing values. There are values whi
 ```js
 // This variable is called "a" and stores the character "A"
 // The value's type is "string"
-// You can change the value for this variable
+// You can change the value for this *variable* - it's expected to change
 var a = 'A'
-// If you try to use a to store another value, it won't work
+// If you try to use 'a' below, having used *const*, it won't work - it's a *constant* and
+// it isn't expected to change
 const a = 'A' 
+
+// Below is a way to declare a *variable* which is similar to `var` but has different *scope*
+// We'll learn more about scope in later lessons
+let c = "see"
 
 // This variable is called "b" and stores the number 1 
 // The **type** of this value is "integer"
@@ -64,6 +71,13 @@ var d = {
 
 The concept of types goes very deep in [type theory](https://en.wikipedia.org/wiki/Type_theory) but that's outside of the scope of this class. It's enough to know the following **primitive types**: **string**, **integer**, **float**, **boolean**, and **object**. There are a few others but we don't need to worry about those for now.
 
+### Null and undefined
+Sometimes you may try to use a value which doesn't exist, and you will run into an error saying that the value you're trying to use is `undefined`. This means that you haven't created the value or that you assigned the `undefined` value to an existing variable.
+
+Similarly, a variable or constant may have the value of `null`. This means that the value doesn't exist! In other words, you have an empty variable.
+
+Both `undefined` and `null` are similar, but are used in slightly different contexts. If you want to set a variable to an empty value, use `null`. Undefined is usually the result of a bug which needs to be fixed!
+
 ## Objects
 Objects are the bread and butter of OOP. They allow us to model real life objects and manipulate them using methods in order to build an idea. For example. If we wanted to model a car, one of the ways we can do this is like so:
 
@@ -75,7 +89,7 @@ Objects are the bread and butter of OOP. They allow us to model real life object
     get sound() {
       return "wrooom";
     }
-  }
+  };
 ```
 
 We are now able to **get** and **set** different properties of this object.
@@ -90,6 +104,36 @@ We can also update the different properties, or add new ones.
 ```js
 car.speed = 160
 car.make = 'Tesla'
+```
+
+## Basic Arithmetic
+Programming is often about doing arithmetic. Here are some basic things you can do in JavaScript.
+
+```js
+// Adding strings
+const myName = 'Tuna'
+"Hello " + myName // => "Hello Tuna"
+
+// Addition
+3 + 1 // => 4
+3 + 0.1 // => 3.1
+
+// Subtraction
+4 - 1 = 3
+
+// Multiplication
+3 * 1 = 3
+3 * 0 = 0
+
+// Division
+1 / 0 = Infinity
+0 / 1 = 0
+3 / 1 = 3
+
+// Modulo
+10 % 2 = 0
+10 % 3 = 1 // Add up as many 3s as you can before going over 10, and then see how far from 10 you are; 3 + 3 + 3 = 9. 10 - 9 = 1 so our remainer is 1. If we do 3 + 3 + 3 + 3 = 12 we have gone over 10, so that's no good
+
 ```
 
 ## [Comparisons Operators](https://www.w3schools.com/js/js_comparisons.asp)
@@ -190,15 +234,26 @@ function tellMeAboutTunas(tunaAreFish) {
   if (tunaAreFish) {
     return "They can totally swim in the sea";
   } else {
-    return "Shucks..."
+    return "Shucks...";
   }
-}
+};
 
 tellMeAboutTunas(true); // returns "They can totally swim in the sea"
 tellMeAboutTunas(false); // returns "Shucks..."
 ```
 
-## Exercise:
-Write a fizz-buzz
-Write a switch statement
-Write a function which checks if there is an object in an array
+```js
+function multipleConditions(number) {
+  if (number === 0) {
+    return "Hey, this is a 0!";
+  } else if (number === 1) {
+    return "No way, is that a 1?!";
+  } else if (number === 3) {
+    return "That's a ... 3?";
+  } else {
+    return "Welp, that's not a 0, 1 or 3... shucks";
+  }
+}
+
+multipleConditions(1) // => "No way, is that a 1?!"
+```
