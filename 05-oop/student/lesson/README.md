@@ -169,7 +169,7 @@ Promises help us deal with *asynchronous** code by essentially forcing it to be 
 Below is an example where we use a promise to wait for something to happen first, using the *await* operator.
 
 ```js
-async function delayedThing() {
+function delayedThing() {
   return new Promise((resolve, reject) => {
     setTimeout(function() { 
       resolve(console.log("Hey I'm first")); 
