@@ -4,7 +4,7 @@ We will be learning how to work with JavaScript. JavaScript runs most of the int
 
 ## This lesson covers
 * REPL
-* Declaring Functions
+* Declaring Methods
 * Storing values
 * Objects
 * Comparison Operators
@@ -16,16 +16,16 @@ REPL stands for "read evaluate print loop" and allows us to do things with JavaS
 
 To access the NodeJs REPL, use the command `node` in your terminal 
 
-## Declaring Functions
-To declare a function there are two basic ways:
+## Declaring Methods
+To declare a method there are two basic ways:
 
 ```js
-function superCoolFunction() {
-  return 'I am such a cool function... wow';
+function superCoolMethod() {
+  return 'I am such a cool method... wow';
 };
 
-const superCoolFunction = () => {
-  return 'I am such a cool function... wow';
+const superCoolMethod = () => {
+  return 'I am such a cool method... wow';
 };
 ```
 
