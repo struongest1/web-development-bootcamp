@@ -110,9 +110,14 @@ car.make = 'Tesla'
 Programming is often about doing arithmetic. Here are some basic things you can do in JavaScript.
 
 ```js
-// Adding strings
+// Adding strings (string concatenation)
 const myName = 'Tuna'
 "Hello " + myName // => "Hello Tuna"
+
+// Another syntax for string concatenation uses *backticks*
+const greeting = "Hey there"
+const name = "Bruno"
+`${greeting} ${name}, my old friend`
 
 // Addition
 3 + 1 // => 4

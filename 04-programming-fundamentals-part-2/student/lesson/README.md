@@ -3,10 +3,75 @@
 In this lesson we will continue learning the fundamentals of programming. We will learn how to work with structures in new ways and how to deal with collections of things as well as some approaches to debugging code.
 
 ## This lesson covers
+* Style
 * Arrays
 * For loop
 * Variable scope
 * Debugging
+
+## Style
+Style is an important part of coding. It helps you write code that's more comprehensible. This
+is important because others will often work on that same code, and if enough time passes, your
+code will look so foreign to you, you may not even remember you wrote it. Essentially you want
+to write code which is easy to glance at and figure out what's going on, and in the long run
+you want to be able to **write "stories" using code**.
+
+Here are a few rules to follow:
+
+```js
+// Indent things so that you can see where they begin and end
+// Notice that the first and last line of the function start at the same indentation
+// Likewise, the first and last line of the object inside the function have the same indentation
+// Lastly, the properties of the object properties have the same indentation, showing us they're all
+// in the same "location"
+function example(){
+  const object = {
+    type: 'example',
+    size: 'small',
+  }
+
+  return object;
+};
+
+// It's also a good idea to put semi-colons at the ends of lines. The semi-colon indicates
+// the end of an expression. Withou them, sometimes the code interpreter can confuse things
+// and mash together pieces of code which are actually supposed to be run independently, thus
+// creating unexpected results
+
+// This will throw an error
+let a = 1
+[1, 2, 3, 4].push(a);
+
+// This won't
+let a = 1;
+[1, 2, 3, 4].push(a);
+
+// When using operators, put spaces on both sides of them
+// Examples of properly formatted operators
+1 + 1;
+true && "banana";
+100 / 5
+
+//Examples of poorly formatted operators
+3%1;
+"dolpin"||"mollusk"
+
+// Additionally, we want to put spaces after commas in an array like so:
+[1, 2, 3, 4, 5]
+
+// Not like this:
+[1,2,3,4]
+
+// Another small details is that functions should not have a space before the opening curly brace
+function noSpaceBeforeCurly(){
+  return "Proper!";
+}
+
+function notSoProper() {
+  return "Could be better...";
+}
+
+```
 
 ## Arrays
 One important concept in programming is having a collection of something. Usually, we use a thing called an *array* which you can think of as a "box" which holds a bunch of "things".
