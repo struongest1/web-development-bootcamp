@@ -1,6 +1,6 @@
 # HTML and CSS Fundamentals
 
-HTML and CSS, together with JavaScript are the three pilars of modern web development. Together, they form a (almost) complete "tech stack" which is sufficient for building performant web applications which meet today's business requirements. This "stack" does have its shortcomings, but also strengths, and is a good place to start learning web development.
+HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets), together with JavaScript are the three pilars of the internet. Together, they form a (almost) complete "tech stack" which is sufficient for building performant web applications which meet today's business requirements. This "stack" does have its shortcomings, but also strengths, and is a good place to start learning web development.
 
 ## This lesson covers:
 * HTML fundamentals
