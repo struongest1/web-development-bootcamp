@@ -9,6 +9,7 @@ Object Oriented Programming focuses on modeling objects which represent objects 
 * Ternary operators
 * Asynchronous vs Synchronous 
 * Promises
+* Filter, Map & Find
 
 ## Writing DRY code
 DRY stands for **Don't Repeat Yourself**. When coding, we want to make sure we reuse as much code as possible. This topic goes deep but ways to start doing this are:
@@ -181,4 +182,47 @@ async function forcedSynchronous() {
   await delayedThing();
   console.log("Hey I'm second");
 }
+```
+
+## Filter, Map & Find
+*Filter*, *map* and *find* are methods that are more aligned with the *functional programming* paradigm. This is the case because all three of these methods are *declarative* in nature. They describe "what" should happen, rather than "how".
+
+A good illustration of this is the difference between the *for loop* and *map*. They have more or less the same result, except *for loops* are built by writing the steps to iterate over each element of an array, while *map* just applies a function to each element of an array.
+
+### [Map](https://www.w3schools.com/jsref/jsref_map.asp)
+Applies a function to each element of an array
+
+```js
+const array = [1, 2, 3, 4, 5];
+
+
+// Both of these do the same thing, they add 2 to each element of the array
+for (let i = 0; i < array.length; i++) {
+  array[i] = array[i] + 2;
+}
+
+array.map(element => element + 2);
+
+// The function can also be written separately
+function add2(value) {
+  return value + 2;
+}
+
+array.map(element => add2(element));
+```
+
+## [Filter](https://www.w3schools.com/jsref/jsref_filter.asp)
+Filter allows us to keep only elements which satisfy some condition.
+
+```js
+// Filters out everything that's divisible by 2
+[1, 2, 3, 4].filter(x => x % 2); // => [1, 3]
+```
+
+## [Find](https://www.w3schools.com/jsref/jsref_find.asp)
+We can finds the first element that matches a condition. It also doesn't modify the array,
+but instead just returns the value.
+
+```js
+[1, 2, 3, 5].find(element => element === 2); // => 2
 ```

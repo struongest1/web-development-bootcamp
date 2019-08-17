@@ -114,7 +114,7 @@ const testArray = [1, 2, 3];
 // To add something to an array, use the `push` method
 testArray.push(4) // => [1, 2, 3, 4]
 
-// To remove the last member of the array, use the `pop` method
+// To remove the last element of the array, use the `pop` method
 testArray.pop() // => [1, 2, 3]
 
 // To remove and return the first memeber of the array, use the `shift` method
